@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="project-title">TempTrack</h1>
+        <div class="main-section">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search-input" placeholder="Nhập thành phố...">
+                <button id="submit-button">Search</button> 
+            </div>
+            <div class="info-wrapper">
+                <p class="city-name">--</p>
+                <p class="weather-state">--</p>
+                <p class="temperature">--</p>
+            </div>
+        </div>
+        <div class="additional-section">
+            <div class="row">
+                <div class="item">
+                    <div class="label">SUNRISE</div>
+                    <div class="value" id="sunrise">--</div>
+                </div>
+                <div class="item">
+                    <div class="label">SUNSET</div>
+                    <div class="value" id="sunset">--</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="label">Humidity</div>
+                    <div class="value" id="humidity">--</div>
+                </div>
+                <div class="item">
+                    <div class="label">Wind Speed</div>
+                    <div class="value" id="wind-speed">--</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="author-name">Developed by Lê Trần Kim Hưng And Nguyễn Hoàng Anh</p>
+    <script src="script.js"></script>
+</body>
+</html>
